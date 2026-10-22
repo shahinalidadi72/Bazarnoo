@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ساخت غرفه در بازارِ نو — حجره آنلاین خود را رایگان بسازید">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>ساخت غرفه | بازارِ نو</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+
+<div class="night-nav" id="nightNav" role="dialog" aria-modal="true" aria-label="منوی بازارِ نو" aria-hidden="true">
+  <div class="nn-inner">
+    <div class="nn-top">
+      <button class="nn-close" id="navClose" type="button" aria-label="closemenu"><span></span><span></span></button>
+      <a class="nn-brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/><circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/></svg>
+        بازارِ<b>نو</b>
+      </a>
+    </div>
+    <nav aria-label="منوی اصلی موبایل">
+      <ul class="nn-list list-unstyled">
+        <li style="--m:#FF6B5E; --ms:rgba(255,107,94,.16)"><a href="index.html"><i class="bi bi-house"></i><b>صفحه اصلی</b><span class="nn-num">۰۱</span></a></li>
+        <li style="--m:#5B8DEF; --ms:rgba(91,141,239,.16)"><a href="product.html"><i class="bi bi-phone"></i><b>کالای دیجیتال</b><span class="nn-num">۰۲</span></a></li>
+        <li style="--m:#34D399; --ms:rgba(52,211,153,.16)"><a href="home-special.html"><i class="bi bi-moon-stars"></i><b>شب‌بازار</b><span class="nn-num">۰۳</span></a></li>
+        <li style="--m:#E9A13B; --ms:rgba(233,161,59,.16)"><a href="auth-login.html"><i class="bi bi-person"></i><b>ورود / ثبت‌نام</b><span class="nn-num">۰۴</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<header class="sticky-top glass-header" id="bazarHeader">
+  <div class="container-xxl">
+    <div class="d-flex align-items-center gap-2 gap-lg-3 py-2">
+      <button class="burger-fancy d-lg-none" type="button" id="navToggle"
+              aria-controls="nightNav" aria-expanded="false" aria-label="openmenu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="logo" href="index.html">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#1B2A6B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#E9A13B"/>
+        </svg>
+        <span>بازارِ<b>نو</b></span>
+      </a>
+      <form class="search-bar d-none d-lg-flex flex-grow-1" role="search">
+        <input type="search" placeholder="جستجو در بازارِ نو..." aria-label="search">
+        <button type="submit"><i class="bi bi-search"></i> جستجو</button>
+      </form>
+      <div class="d-flex gap-2 ms-auto ms-lg-0">
+        <a class="icon-btn d-none d-sm-grid" href="auth-login.html" aria-label="account"><i class="bi bi-person"></i></a>
+        <button class="icon-btn" type="button" id="cartBtn" aria-label="سبد خرید">
+          <i class="bi bi-basket2"></i>
+          <span class="cart-badge" id="cartBadge">۰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container-xxl py-4">
+
+ 
+  <div class="vd-hero reveal">
+    <div class="gireh"></div>
+    <div class="position-relative">
+      <span class="badge" style="background:rgba(233,161,59,.18);color:var(--zafran);border-radius:999px;padding:6px 16px;font-size:12px;">
+        <i class="bi bi-stars"></i> تا پایان ماه بدون کارمزد
+      </span>
+      <h1 class="mt-3">حجره‌ات را در <b>بازارِ نو</b> بساز</h1>
+      <p>
+        فروش آنلاین را از امروز شروع کن؛ بدون نیاز به دانش فنی، با پنل مدیریت حرفه‌ای و پشتیبانی ۲۴ ساعته.
+        هزاران غرفه‌دار از سراسر ایران همین حالا در حال فروش‌اند — تو هم می‌توانی!
+      </p>
+    </div>
+  </div>
+
+ 
+  <div class="vd-benefits reveal">
+    <div class="vd-benefit"><i class="bi bi-graph-up-arrow"></i><b>فروش بدون محدودیت</b><span>از ۱ کالا تا ۱۰ هزار کالا، زیرساخت ما آماده است</span></div>
+    <div class="vd-benefit"><i class="bi bi-speedometer2"></i><b>پنل مدیریت حرفه‌ای</b><span>مدیریت موجودی، سفارش‌ها و آمار فروش</span></div>
+    <div class="vd-benefit"><i class="bi bi-cash-coin"></i><b>تسویه هفتگی</b><span>واریز درآمد به حساب شما هر جمعه</span></div>
+    <div class="vd-benefit"><i class="bi bi-headset"></i><b>پشتیبانی ۲۴ ساعته</b><span>همیشه یک کارشناس کنارت است</span></div>
+  </div>
+
+  <div class="vd-steps reveal">
+    <div class="vd-step"><span class="n">۱</span><span><b>ثبت اطلاعات</b><span>فرم را پر کن</span></span></div>
+    <div class="vd-step"><span class="n">۲</span><span><b>تایید مدارک</b><span>کمتر از ۲۴ ساعت</span></span></div>
+    <div class="vd-step"><span class="n">۳</span><span><b>شروع فروش</b><span>کالاها را بچین</span></span></div>
+  </div>
+
+ 
+  <div class="row g-4 align-items-start reveal">
+    <div class="col-lg-7">
+      <form class="vd-form">
+        <h2>فرم درخواست حجره</h2>
+        <p class="lead">اطلاعات پایه حجره را وارد کنید؛ کمتر از ۳ دقیقه طول می‌کشد.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="vdName">نام حجره</label>
+            <input type="text" class="form-control" id="vdName" placeholder="مثلاً سوغات شیراز">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="vdCat">راسته اصلی</label>
+            <select class="form-select" id="vdCat">
+              <option>کالای دیجیتال</option>
+              <option>مد و پوشاک</option>
+              <option>سوغات و صنایع‌دستی</option>
+              <option>خانه و آشپزخانه</option>
+              <option>زیبایی و سلامت</option>
+              <option>کتاب و هنر</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="vdCity">شهر</label>
+            <select class="form-select" id="vdCity">
+              <option>تهران</option>
+              <option>مشهد</option>
+              <option>اصفهان</option>
+              <option>تبریز</option>
+              <option>شیراز</option>
+              <option>سایر شهرها</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="vdPhone">شماره تماس</label>
+            <input type="tel" class="form-control" id="vdPhone" placeholder="۰۹۱۲ ··· ····" inputmode="numeric">
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="vdDesc">توضیح کوتاه درباره حجره</label>
+            <textarea class="form-control" id="vdDesc" rows="3" placeholder="چه می‌فروشی؟ چی تو حجره‌ات خاص است؟"></textarea>
+          </div>
+        </div>
+
+        <label class="au-check" style="color:var(--muted);">
+          <input type="checkbox">
+          <span><a href="#" style="color:var(--firoozeh-d);text-decoration:none;">قوانین غرفه‌داران</a> را خوانده‌ام و می‌پذیرم</span>
+        </label>
+
+        <a href="auth-verify.html" class="btn btn-zafran w-100" style="display:flex;align-items:center;justify-content:center;gap:8px;">
+          <i class="bi bi-shop"></i> ثبت درخواست حجره
+        </a>
+      </form>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="p-card" style="border-radius:20px;">
+        <div class="thumb t3" style="height:150px;"><img class="photo" src="assets/products/stall.jpg" alt="حجره نمونه در بازار ایرانی"></div>
+        <div class="p-body">
+          <h3 style="font-size:15px;">حجره نمونه در بازارِ نو</h3>
+          <p style="font-size:12.5px;color:var(--muted);line-height:2;margin-bottom:12px;">
+            این‌طور حجره‌ای خواهی داشت: بنر اختصاصی، رتبه عملکرد، نشان تأیید و امکان پاسخ به دیدگاه‌ها.
+          </p>
+          <ul class="list-unstyled" style="font-size:12.5px;line-height:2.3;">
+            <li><i class="bi bi-patch-check" style="color:var(--firoozeh-d);"></i> نشان «غرفه‌دار تأییدشده»</li>
+            <li><i class="bi bi-patch-check" style="color:var(--firoozeh-d);"></i> نمایش در رتبه‌بندی حجره‌ها</li>
+            <li><i class="bi bi-patch-check" style="color:var(--firoozeh-d);"></i> شرکت در جمعه‌بازار و تخفیف‌ها</li>
+            <li><i class="bi bi-patch-check" style="color:var(--firoozeh-d);"></i> گزارش فروش هفتگی</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bazar-footer">
+  <div class="arch-strip" aria-hidden="true"></div>
+  <div class="container-xxl">
+    <div class="row g-4 py-4 py-lg-5">
+      <div class="col-lg-4 col-md-12">
+        <a class="logo logo-light" href="index.html">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+            <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+          </svg>
+          <span>بازارِ<b>نو</b></span>
+        </a>
+        <p class="f-about">بازارِ نو یک کاروانسرای دیجیتال است؛ جایی که هزاران غرفه‌دار معتبر از سراسر ایران، کالای اصل را با ضمانت اصالت به دست شما می‌رسانند.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>پیوندهای سریع</h4>
+        <ul class="f-links">
+          <li><a href="product.html">محصولات</a></li>
+          <li><a href="home-special.html">شب‌بازار</a></li>
+          <li><a href="profile-orders.html">پیگیری سفارش</a></li>
+          <li><a href="auth-login.html">ورود</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>خدمات مشتریان</h4>
+        <ul class="f-links">
+          <li><a href="#">پرسش‌های متداول</a></li>
+          <li><a href="#">رویه بازگشت کالا</a></li>
+          <li><a href="#">شرایط استفاده</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4">
+        <h4>با ما در ارتباط باشید</h4>
+        <p class="f-contact-line"><i class="bi bi-geo-alt"></i> تهران، بازار بزرگ، سرای بازارِ نو</p>
+        <p class="f-contact-line"><i class="bi bi-telephone"></i> ۰۲۱-۹۱۰۰۲۰۳۰</p>
+        <p class="f-contact-line"><i class="bi bi-envelope"></i> salam@bazarnow.ir</p>
+        <div class="d-flex gap-2 mt-3">
+          <a class="social-btn" href="#" aria-label="insta"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="tel"><i class="bi bi-send"></i></a>
+          <a class="social-btn" href="#" aria-label="linkdin"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="#" aria-label="yout"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© ۱۴۰۴ بازارِ نو — تمام حقوق برای کاروانسرای دیجیتال بازارِ نو محفوظ است</div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+  <div id="cartToast" class="toast bazar-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex align-items-center">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill icon-zafran"></i> محصول به سبد خرید اضافه شد
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="close"></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="بازارِ نو — کاروانسرای دیجیتال خرید و فروش آنلاین با ضمانت اصالت کالا">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>بازارِ نو | فروشگاه اینترنتی</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span><i class="bi bi-truck"></i> ارسال رایگان سفارش‌های بالای <b>۵۰۰ هزار تومان</b></span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-fire"></i> جمعه‌بازار با تخفیف تا <b>۴۰٪</b> روی کالای دیجیتال</span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-shop"></i> غرفه‌داران جدید به راسته سوغات اضافه شدند</span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-shield-check"></i> ضمانت بازگشت <b>۷ روزه</b> بدون قید و شرط</span>
+    <span><i class="bi bi-truck"></i> ارسال رایگان سفارش‌های بالای <b>۵۰۰ هزار تومان</b></span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-fire"></i> جمعه‌بازار با تخفیف تا <b>۴۰٪</b> روی کالای دیجیتال</span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-shop"></i> غرفه‌داران جدید به راسته سوغات اضافه شدند</span>
+    <span class="dot">✦</span>
+    <span><i class="bi bi-shield-check"></i> ضمانت بازگشت <b>۷ روزه</b> بدون قید و شرط</span>
+  </div>
+</div>
+
+<header class="sticky-top glass-header" id="bazarHeader">
+  <div class="container-xxl">
+    <div class="d-flex align-items-center gap-2 gap-lg-3 py-2">
+
+      <button class="burger-fancy d-lg-none" type="button" id="navToggle"
+              aria-controls="nightNav" aria-expanded="false" aria-label="باز کردن منو">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="logo" href="#">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#1B2A6B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#E9A13B"/>
+        </svg>
+        <span>بازارِ<b>نو</b></span>
+      </a>
+
+      
+      <form class="search-bar d-none d-lg-flex flex-grow-1" role="search">
+        <input type="search" placeholder="جستجو در بازارِ نو... مثلاً هدفون بی‌سیم" aria-label="جستجو">
+        <button type="submit"><i class="bi bi-search"></i> جستجو</button>
+      </form>
+
+      <div class="d-flex gap-2 ms-auto ms-lg-0">
+        <a class="icon-btn d-none d-sm-grid" href="auth-login.html" aria-label="حساب کاربری">
+          <i class="bi bi-person"></i>
+        </a>
+        <button class="icon-btn" type="button" id="cartBtn" aria-label="سبد خرید">
+          <i class="bi bi-basket2"></i>
+          <span class="cart-badge" id="cartBadge">۰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="cat-nav d-none d-lg-block" aria-label="دسته‌بندی‌ها">
+    <div class="container-xxl d-flex gap-1 py-1">
+      <a href="#" class="hot"><i class="bi bi-lightning-charge-fill"></i> پیشنهاد شگفت‌انگیز</a>
+      <a href="#"><i class="bi bi-basket2"></i> سوپرمارکت</a>
+      <a href="#"><i class="bi bi-bag"></i> مد و پوشاک</a>
+      <a href="#"><i class="bi bi-phone"></i> کالای دیجیتال</a>
+      <a href="#"><i class="bi bi-house-heart"></i> خانه و آشپزخانه</a>
+      <a href="#"><i class="bi bi-heart-pulse"></i> زیبایی و سلامت</a>
+      <a href="#"><i class="bi bi-journal-bookmark"></i> کتاب و هنر</a>
+      <a href="#" class="hot"><i class="bi bi-percent"></i> تخفیف‌ها و حوداث</a>
+    </div>
+  </nav>
+</header>
+
+
+<div class="night-nav" id="nightNav" role="dialog" aria-modal="true" aria-label="منوی بازارِ نو" aria-hidden="true">
+  <div class="nn-inner">
+
+  
+    <div class="nn-lantern" aria-hidden="true">
+      <svg viewBox="0 0 64 122" width="46">
+        <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+        <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+        <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+        <g class="flame">
+          <path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/>
+          <circle cx="32" cy="58" r="3.6" fill="#F6A21B"/>
+        </g>
+        <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+        <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+        <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+      </svg>
+    </div>
+
+
+    <div class="nn-top">
+      <button class="nn-close" id="navClose" type="button" aria-label="بستن منو"><span></span><span></span></button>
+      <span class="nn-brand">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+        </svg>
+        بازارِ<b>نو</b>
+      </span>
+    </div>
+
+   
+    <form class="search-bar nn-search" role="search">
+      <input type="search" placeholder="جستجو در شب‌بازار..." aria-label="جستجو">
+      <button type="submit" aria-label="جستجو"><i class="bi bi-search"></i></button>
+    </form>
+
+    
+    <nav aria-label="mobile menu">
+      <ul class="nn-list list-unstyled">
+        <li style="--m:#FF6B5E; --ms:rgba(255,107,94,.16)"><a href="#"><i class="bi bi-lightning-charge-fill"></i><b>پیشنهاد شگفت‌انگیز</b><span class="nn-num">۰۱</span></a></li>
+        <li style="--m:#2EC4B6; --ms:rgba(46,196,182,.16)"><a href="#"><i class="bi bi-basket2"></i><b>سوپرمارکت</b><span class="nn-num">۰۲</span></a></li>
+        <li style="--m:#E9A13B; --ms:rgba(233,161,59,.16)"><a href="#"><i class="bi bi-bag"></i><b>مد و پوشاک</b><span class="nn-num">۰۳</span></a></li>
+        <li style="--m:#5B8DEF; --ms:rgba(91,141,239,.16)"><a href="#"><i class="bi bi-phone"></i><b>کالای دیجیتال</b><span class="nn-num">۰۴</span></a></li>
+        <li style="--m:#A78BFA; --ms:rgba(167,139,250,.16)"><a href="#"><i class="bi bi-house-heart"></i><b>خانه و آشپزخانه</b><span class="nn-num">۰۵</span></a></li>
+        <li style="--m:#F472B6; --ms:rgba(244,114,182,.16)"><a href="#"><i class="bi bi-heart-pulse"></i><b>زیبایی و سلامت</b><span class="nn-num">۰۶</span></a></li>
+        <li style="--m:#34D399; --ms:rgba(52,211,153,.16)"><a href="#"><i class="bi bi-journal-bookmark"></i><b>کتاب و هنر</b><span class="nn-num">۰۷</span></a></li>
+        <li style="--m:#FFD166; --ms:rgba(255,209,102,.16)"><a href="#"><i class="bi bi-percent"></i><b>تخفیف‌ها و حوداث</b><span class="nn-num">۰۸</span></a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="nn-foot">
+      <a href="auth-login.html" class="btn btn-zafran"><i class="bi bi-person"></i> ورود / ثبت‌نام</a>
+      <a href="vendor-register.html" class="btn nn-ghost"><i class="bi bi-box-seam"></i> ورود غرفه‌دار</a>
+      <div class="nn-social">
+        <a href="#" aria-label="insta"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="tel"><i class="bi bi-send"></i></a>
+        <a href="#" aria-label="wat"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" aria-label="yout"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+
+
+    <div class="nn-marquee" aria-hidden="true">
+      <div class="nn-marquee-track">
+        <span>ارسال رایگان بالای ۵۰۰ هزار تومان ✦ ضمانت بازگشت ۷ روزه ✦ پرداخت در محل ✦ پشتیبانی ۲۴/۷ ✦ </span>
+        <span>ارسال رایگان بالای ۵۰۰ هزار تومان ✦ ضمانت بازگشت ۷ روزه ✦ پرداخت در محل ✦ پشتیبانی ۲۴/۷ ✦ </span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<main>
+
+
+  <div class="hero">
+    <div class="container-xxl">
+      <div class="bento reveal">
+        <a class="tile b1" href="#">
+          <div class="gireh"></div>
+          <span class="kicker">✦ کاروانسرای دیجیتال ایران</span>
+          <h1>هر چه در بازار است،<br>این‌جا <b>ارزان‌تر</b> است</h1>
+          <p>از حجره‌های معتبر سراسر ایران، با ضمانت اصالت کالا و بازگشت ۷ روزه</p>
+          <span class="btn btn-zafran">ورود به بازار <i class="bi bi-arrow-left"></i></span>
+        </a>
+        <a class="tile b2" href="#">
+          <div class="stamp">تا<br>۴۰٪</div>
+          <h3>جمعه‌بازار شروع شد!</h3>
+          <p>فقط تا پایان هفته — برندها را از دست ندهید</p>
+        </a>
+        <a class="tile b3" href="#">
+          <img class="emoji-bg float is-img" src="assets/products/sony.jpg" alt="هدفون سونی — برند روز">
+          <h3>برند روز</h3>
+          <p>سونی با ۲۵٪ تخفیف</p>
+        </a>
+        <a class="tile b4" href="vendor-register.html">
+          <img class="emoji-bg float is-img" src="assets/products/stall.jpg" alt="حجره ایرانی">
+          <h3>غرفه‌دار شوید</h3>
+          <p>حجره خود را رایگان بسازید</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="py-5 reveal">
+    <div class="container-xxl">
+      <div class="sec-head">
+        <h2>راسته‌های بازار</h2>
+        <a href="#">همه دسته‌ها <i class="bi bi-arrow-left"></i></a>
+      </div>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-8 g-3 auto">
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/a55-front.jpg" alt="موبایل"></span><b>موبایل</b><span>۴٬۲۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/laptop.jpg" alt="لپ‌تاپ"></span><b>لپ‌تاپ</b><span>۱٬۸۵۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/nike.jpg" alt="مد و پوشاک"></span><b>مد و پوشاک</b><span>۱۲٬۴۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img class="photo" src="assets/products/appliance.jpg" alt="لوازم خانگی"></span><b>لوازم خانگی</b><span>۶٬۳۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/perfume.jpg" alt="آرایشی بهداشتی"></span><b>آرایشی بهداشتی</b><span>۸٬۱۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img class="photo" src="assets/products/saffron.jpg" alt="سوغات و خوراکی"></span><b>سوغات و خوراکی</b><span>۳٬۷۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/book.jpg" alt="کتاب و هنر"></span><b>کتاب و هنر</b><span>۵٬۶۰۰ کالا</span></a></div>
+        <div class="col"><a class="arc" href="#"><span class="ic"><img src="assets/products/tools.jpg" alt="ابزار و خودرو"></span><b>ابزار و خودرو</b><span>۲٬۹۰۰ کالا</span></a></div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="py-4 reveal">
+    <div class="container-xxl">
+      <div class="souk">
+        <div class="gireh"></div>
+        <div class="souk-head position-relative">
+          <h2>⚡ چهارسوقِ <b>تخفیف‌ها</b></h2>
+          <div class="cdown" aria-label="زمان باقی‌مانده">
+            <div class="cd-cell"><b id="cdH">۰۰</b><span>ساعت</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-cell"><b id="cdM">۰۰</b><span>دقیقه</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-cell"><b id="cdS">۰۰</b><span>ثانیه</span></div>
+          </div>
+        </div>
+        <div class="deals auto">
+          <a class="deal big" href="product.html">
+            <img class="im photo float" src="assets/products/sony.jpg" alt="هدفون بی‌سیم سونی">
+            <span class="nm">هدفون بی‌سیم سونی WH-1000</span>
+            <span class="desc">نویزکنسلینگ فعال + ۳۰ ساعت پخش موسیقی</span>
+            <span class="pr"><s>۴٬۶۰۰٬۰۰۰</s> ۳٬۴۵۰٬۰۰۰ تومان</span>
+          </a>
+          <a class="deal" href="product.html"><span class="seal-sm">۲۵٪</span><img class="im" src="assets/products/watch.jpg" alt="ساعت هوشمند شیائومی"><span class="nm">ساعت هوشمند شیائومی</span><span class="pr"><s>۲٬۸۰۰٬۰۰۰</s> ۲٬۱۰۰٬۰۰۰</span></a>
+          <a class="deal" href="product.html"><span class="seal-sm">۳۰٪</span><img class="im" src="assets/products/perfume.jpg" alt="عطر لالیک انکر نویر"><span class="nm">عطر لالیک انکر نویر</span><span class="pr"><s>۴٬۲۰۰٬۰۰۰</s> ۲٬۹۵۰٬۰۰۰</span></a>
+          <a class="deal" href="product.html"><span class="seal-sm">۱۸٪</span><img class="im" src="assets/products/a55-front.jpg" alt="گلکسی A55"><span class="nm">گلکسی A55 میان‌رده برتر</span><span class="pr"><s>۲۵٬۹۰۰٬۰۰۰</s> ۲۱٬۹۰۰٬۰۰۰</span></a>
+          <a class="deal" href="product.html"><span class="seal-sm">۴۰٪</span><img class="im photo" src="assets/products/coffee.jpg" alt="پکیج قهوه اسپشیالتی"><span class="nm">پکیج قهوه اسپشیالتی</span><span class="pr"><s>۱٬۴۵۰٬۰۰۰</s> ۸۹۰٬۰۰۰</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container-xxl">
+      <div class="sec-head reveal">
+        <h2>حجره‌های برگزیده</h2>
+        <a href="#">مشاهده همه محصولات <i class="bi bi-arrow-left"></i></a>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4 auto reveal">
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t1"><img src="assets/products/a55-front.jpg" alt="گوشی سامسونگ گلکسی A55"><span class="seal">۱۵٪</span></div>
+            <div class="p-body">
+              <span class="cat">کالای دیجیتال</span>
+              <h3>گوشی سامسونگ گلکسی A55 ظرفیت ۲۵۶</h3>
+              <div class="stars">★★★★★ <i>(۱٬۲۴۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۲۵٬۹۰۰٬۰۰۰</small><b>۲۱٬۹۰۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t2"><img src="assets/products/nike.jpg" alt="کفش نایک ایرمکس"><span class="seal">۲۰٪</span></div>
+            <div class="p-body">
+              <span class="cat">مد و پوشاک</span>
+              <h3>کفش روزمره نایک ایرمکس اورجینال</h3>
+              <div class="stars">★★★★☆ <i>(۸۶۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۶٬۰۰۰٬۰۰۰</small><b>۴٬۸۰۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t3"><img class="photo" src="assets/products/coffee.jpg" alt="پکیج قهوه اسپشیالتی"><span class="seal">۴۰٪</span></div>
+            <div class="p-body">
+              <span class="cat">خوراکی و سوغات</span>
+              <h3>پکیج قهوه اسپشیالتی ۱ کیلویی</h3>
+              <div class="stars">★★★★★ <i>(۲٬۱۰۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۱٬۴۵۰٬۰۰۰</small><b>۸۹۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t4"><img src="assets/products/perfume.jpg" alt="عطر لالیک انکر نویر"><span class="seal">۳۰٪</span></div>
+            <div class="p-body">
+              <span class="cat">آرایشی بهداشتی</span>
+              <h3>عطر مردانه لالیک انکر نویر</h3>
+              <div class="stars">★★★★★ <i>(۵۴۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۴٬۲۰۰٬۰۰۰</small><b>۲٬۹۵۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t5"><img src="assets/products/bag.jpg" alt="کیف چرم دستدوز تبریز"><span class="seal seal-new">جدید</span></div>
+            <div class="p-body">
+              <span class="cat">سوغات و صنایع‌دستی</span>
+              <h3>کیف چرم دست‌دوز تبریز</h3>
+              <div class="stars">★★★★★ <i>(۳۲۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><b>۳٬۷۵۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t6"><img src="assets/products/watch.jpg" alt="ساعت هوشمند شیائومی"><span class="seal">۲۵٪</span></div>
+            <div class="p-body">
+              <span class="cat">کالای دیجیتال</span>
+              <h3>ساعت هوشمند شیائومی ردمی واچ ۵</h3>
+              <div class="stars">★★★★☆ <i>(۱٬۵۸۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۲٬۸۰۰٬۰۰۰</small><b>۲٬۱۰۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t7"><img src="assets/products/book.jpg" alt="کتاب جلد سخت"><span class="seal">۱۰٪</span></div>
+            <div class="p-body">
+              <span class="cat">کتاب و هنر</span>
+              <h3>رباعی‌های حافظ — جلد چرمی نفیس</h3>
+              <div class="stars">★★★★★ <i>(۹۸۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۵۰۰٬۰۰۰</small><b>۴۵۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="p-card">
+            <div class="thumb t8"><img class="photo" src="assets/products/saffron.jpg" alt="سوغات و هدیه ایرانی"><span class="seal">۱۲٪</span></div>
+            <div class="p-body">
+              <span class="cat">خانه و آشپزخانه</span>
+              <h3>سرویس چای‌خوری لالجین ۱۲ پارچه</h3>
+              <div class="stars">★★★★☆ <i>(۴۱۰ دیدگاه)</i></div>
+              <div class="price">
+                <div><small>۲٬۷۰۰٬۰۰۰</small><b>۲٬۳۸۰٬۰۰۰ تومان</b></div>
+                <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+            <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="brands" aria-hidden="true">
+    <div class="b-track">
+      <span class="b-chip"><img src="assets/brands/samsung.svg" alt="سامسونگ"></span>
+      <span class="b-chip"><img src="assets/brands/apple.svg" alt="اپل"></span>
+      <span class="b-chip"><img src="assets/brands/xiaomi.svg" alt="شیائومی"></span>
+      <span class="b-chip"><img src="assets/brands/sony.svg" alt="سونی"></span>
+      <span class="b-chip"><img src="assets/brands/lg.svg" alt="ال‌جی"></span>
+      <span class="b-chip"><img src="assets/brands/bosch.svg" alt="بوش"></span>
+      <span class="b-chip"><img src="assets/brands/philips.svg" alt="فیلیپس"></span>
+      <span class="b-chip"><img src="assets/brands/nike.svg" alt="نایک"></span>
+      <span class="b-chip"><img src="assets/brands/samsung.svg" alt="سامسونگ"></span>
+      <span class="b-chip"><img src="assets/brands/apple.svg" alt="اپل"></span>
+      <span class="b-chip"><img src="assets/brands/xiaomi.svg" alt="شیائومی"></span>
+      <span class="b-chip"><img src="assets/brands/sony.svg" alt="سونی"></span>
+      <span class="b-chip"><img src="assets/brands/lg.svg" alt="ال‌جی"></span>
+      <span class="b-chip"><img src="assets/brands/bosch.svg" alt="بوش"></span>
+      <span class="b-chip"><img src="assets/brands/philips.svg" alt="فیلیپس"></span>
+      <span class="b-chip"><img src="assets/brands/nike.svg" alt="نایک"></span>
+    </div>
+  </div>
+
+ 
+  <section class="py-5">
+    <div class="container-xxl">
+      <div class="sec-head reveal">
+        <h2>مجله بازار</h2>
+        <a href="#">همه مقالات <i class="bi bi-arrow-left"></i></a>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 auto reveal">
+        <div class="col">
+          <a class="m-card" href="#">
+            <div class="m-thumb t2"><img class="photo" src="assets/products/sony.jpg" alt="هدفون بی‌سیم"><span class="m-tag">راهنمای خرید</span></div>
+            <div class="m-body">
+              <h3>چطور هدفون مناسب سلیقه خودمان را انتخاب کنیم؟</h3>
+              <div class="m-meta">✍️ تحریریه بازارِ نو • ۱۲ مهر ۱۴۰۴ • ۶ دقیقه مطالعه</div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="m-card" href="#">
+            <div class="m-thumb t3"><img class="photo" src="assets/products/coffee.jpg" alt="سوغات و خوراکی ایرانی"><span class="m-tag">سوغات ایران</span></div>
+            <div class="m-body">
+              <h3>۱۰ سوغات ایرانی که سراسر دنیا عاشقشان هستند</h3>
+              <div class="m-meta">✍️ تحریریه بازارِ نو • ۸ مهر ۱۴۰۴ • ۴ دقیقه مطالعه</div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="m-card" href="#">
+            <div class="m-thumb t4"><img src="assets/products/perfume.jpg" alt="تشخیص کالای اصل"><span class="m-tag">ترفند</span></div>
+            <div class="m-body">
+              <h3>کالای اصل را چطور از تقلبی تشخیص دهیم؟ ۷ نشانه کلیدی</h3>
+              <div class="m-meta">✍️ تحریریه بازارِ نو • ۲ مهر ۱۴۰۴ • ۸ دقیقه مطالعه</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="bazar-footer">
+  <div class="arch-strip" aria-hidden="true"></div>
+  <div class="container-xxl">
+    <div class="row g-4 py-4 py-lg-5">
+      <div class="col-lg-3 col-md-12">
+        <a class="logo logo-light" href="#">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+            <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+          </svg>
+          <span>بازارِ<b>نو</b></span>
+        </a>
+        <p class="f-about">بازارِ نو یک کاروانسرای دیجیتال است؛ جایی که هزاران غرفه‌دار معتبر از سراسر ایران، کالای اصل را با ضمانت اصالت و بازگشت ۷ روزه به دست شما می‌رسانند.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>راسته‌های پرمخاطب</h4>
+        <ul class="f-links">
+          <li><a href="#">موبایل و کالای دیجیتال</a></li>
+          <li><a href="#">مد و پوشاک</a></li>
+          <li><a href="#">سوغات و صنایع‌دستی</a></li>
+          <li><a href="#">کتاب و هنر</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>خدمات مشتریان</h4>
+        <ul class="f-links">
+          <li><a href="#">پرسش‌های متداول</a></li>
+          <li><a href="#">رویه بازگشت کالا</a></li>
+          <li><a href="#">شرایط استفاده</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>صفحات قالب</h4>
+        <ul class="f-links">
+          <li><a href="home-special.html">شب‌بازار — صفحه اصلی ویژه</a></li>
+          <li><a href="home-luxury.html">سرایِ نقره — صفحه اصلی لاکچری</a></li>
+          <li><a href="vendor-register.html">ساخت غرفه</a></li>
+          <li><a href="profile-orders.html">لیست سفارش‌ها</a></li>
+          <li><a href="auth-login.html">ورود و ثبت‌نام</a></li>
+          <li><a href="admin.html">پنل مدیریت</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h4>با ما در ارتباط باشید</h4>
+        <p class="f-contact-line"><i class="bi bi-geo-alt"></i> تهران، بازار بزرگ، سرای بازارِ نو</p>
+        <p class="f-contact-line"><i class="bi bi-telephone"></i> ۰۲۱-۹۱۰۰۲۰۳۰</p>
+        <p class="f-contact-line"><i class="bi bi-envelope"></i> salam@bazarnow.ir</p>
+        <div class="d-flex gap-2 mt-3">
+          <a class="social-btn" href="#" aria-label="اینستاگرام"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="تلگرام"><i class="bi bi-send"></i></a>
+          <a class="social-btn" href="#" aria-label="لینکدین"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="#" aria-label="یوتیوب"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© ۱۴۰۴ بازارِ نو — تمام حقوق برای کاروانسرای دیجیتال بازارِ نو محفوظ است</div>
+</footer>
+
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+  <div id="cartToast" class="toast bazar-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex align-items-center">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill icon-zafran"></i> محصول به سبد خرید اضافه شد
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="بستن"></button>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

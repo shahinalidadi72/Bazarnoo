@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="شب‌بازارِ نو — تجربه خرید شبانه در کاروانسرای دیجیتال ایران">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>شب‌بازارِ نو | فروشگاه اینترنتی</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="sp-page">
+
+
+<div class="night-nav" id="nightNav" role="dialog" aria-modal="true" aria-label="منوی بازارِ نو" aria-hidden="true">
+  <div class="nn-inner">
+    <div class="nn-lantern" aria-hidden="true">
+      <svg viewBox="0 0 64 122" width="46">
+        <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+        <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+        <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+        <g class="flame">
+          <path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/>
+          <circle cx="32" cy="58" r="3.6" fill="#F6A21B"/>
+        </g>
+        <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+        <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+        <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+      </svg>
+    </div>
+    <div class="nn-top">
+      <button class="nn-close" id="navClose" type="button" aria-label="بستن منو"><span></span><span></span></button>
+      <a class="nn-brand" href="home-special.html">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+        </svg>
+        شب‌بازارِ<b>نو</b>
+      </a>
+    </div>
+    <form class="search-bar nn-search" role="search">
+      <input type="search" placeholder="جستجو در شب‌بازار..." aria-label="جستجو">
+      <button type="submit" aria-label="جستجو"><i class="bi bi-search"></i></button>
+    </form>
+    <nav aria-label="منوی اصلی موبایل">
+      <ul class="nn-list list-unstyled">
+        <li style="--m:#FF6B5E; --ms:rgba(255,107,94,.16)"><a href="product.html"><i class="bi bi-lightning-charge-fill"></i><b>پیشنهاد شگفت‌انگیز</b><span class="nn-num">۰۱</span></a></li>
+        <li style="--m:#2EC4B6; --ms:rgba(46,196,182,.16)"><a href="#"><i class="bi bi-basket2"></i><b>سوپرمارکت</b><span class="nn-num">۰۲</span></a></li>
+        <li style="--m:#E9A13B; --ms:rgba(233,161,59,.16)"><a href="#"><i class="bi bi-bag"></i><b>مد و پوشاک</b><span class="nn-num">۰۳</span></a></li>
+        <li style="--m:#5B8DEF; --ms:rgba(91,141,239,.16)"><a href="product.html"><i class="bi bi-phone"></i><b>کالای دیجیتال</b><span class="nn-num">۰۴</span></a></li>
+        <li style="--m:#A78BFA; --ms:rgba(167,139,250,.16)"><a href="#"><i class="bi bi-house-heart"></i><b>خانه و آشپزخانه</b><span class="nn-num">۰۵</span></a></li>
+        <li style="--m:#F472B6; --ms:rgba(244,114,182,.16)"><a href="#"><i class="bi bi-heart-pulse"></i><b>زیبایی و سلامت</b><span class="nn-num">۰۶</span></a></li>
+        <li style="--m:#34D399; --ms:rgba(52,211,153,.16)"><a href="#"><i class="bi bi-journal-bookmark"></i><b>کتاب و هنر</b><span class="nn-num">۰۷</span></a></li>
+        <li style="--m:#FFD166; --ms:rgba(255,209,102,.16)"><a href="vendor-register.html"><i class="bi bi-shop"></i><b>ساخت غرفه</b><span class="nn-num">۰۸</span></a></li>
+      </ul>
+    </nav>
+    <div class="nn-foot">
+      <a href="auth-login.html" class="btn btn-zafran"><i class="bi bi-person"></i> ورود / ثبت‌نام</a>
+      <a href="vendor-register.html" class="btn nn-ghost"><i class="bi bi-box-seam"></i> ورود غرفه‌دار</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="sp-topbar">
+  <div class="container-xxl">
+    <span><i class="bi bi-moon-stars"></i> امشب بازار تا نیمه‌شب باز است — چراغ‌ها روشن، حجره‌ها باز!</span>
+    <a href="index.html">نسخه روزِ بازار <i class="bi bi-sun"></i></a>
+  </div>
+</div>
+
+
+<header class="sticky-top sp-header" id="bazarHeader">
+  <div class="container-xxl">
+    <div class="d-flex align-items-center gap-2 gap-lg-3 py-2">
+      <button class="burger-fancy d-lg-none" type="button" id="navToggle"
+              aria-controls="nightNav" aria-expanded="false" aria-label="باز کردن منو">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="logo" href="home-special.html">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+        </svg>
+        <span>شب‌بازارِ<b>نو</b></span>
+      </a>
+      <form class="search-bar sp-search d-none d-lg-flex flex-grow-1" role="search">
+        <input type="search" placeholder="امشب چه می‌خواهی بخری؟" aria-label="جستجو">
+        <button type="submit"><i class="bi bi-search"></i> جستجو</button>
+      </form>
+      <div class="d-flex gap-2 ms-auto ms-lg-0">
+        <a class="sp-icon d-none d-sm-grid" href="auth-login.html" aria-label="حساب کاربری"><i class="bi bi-person"></i></a>
+        <button class="sp-icon" type="button" id="cartBtn" aria-label="سبد خرید">
+          <i class="bi bi-basket2"></i>
+          <span class="cart-badge" id="cartBadge">۰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  
+  <section class="sp-hero">
+    <div class="sp-stars" aria-hidden="true"></div>
+
+    <div class="sp-lantern l1" aria-hidden="true">
+      <svg viewBox="0 0 64 122" width="48">
+        <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+        <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+        <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+        <g class="flame"><path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/><circle cx="32" cy="58" r="3.6" fill="#F6A21B"/></g>
+        <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+        <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+        <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+      </svg>
+    </div>
+    <div class="sp-lantern l2" aria-hidden="true">
+      <svg viewBox="0 0 64 122" width="34">
+        <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+        <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+        <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+        <g class="flame"><path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/><circle cx="32" cy="58" r="3.6" fill="#F6A21B"/></g>
+        <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+        <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+        <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+      </svg>
+    </div>
+    <div class="sp-lantern l3" aria-hidden="true">
+      <svg viewBox="0 0 64 122" width="26">
+        <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+        <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+        <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+        <g class="flame"><path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/><circle cx="32" cy="58" r="3.6" fill="#F6A21B"/></g>
+        <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+        <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+        <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+      </svg>
+    </div>
+
+    <div class="container-xxl position-relative">
+      <span class="sp-kicker"><i class="bi bi-magic"></i> هر شب از غروب تا نیمه‌شب</span>
+      <h1 class="sp-title">قصه‌ی خریدهای <b>نیمه‌شب</b><br>اینجا شروع می‌شود</h1>
+      <p class="sp-sub">
+        وقتی شهر چراغ‌هایش را خاموش می‌کند، بازارِ نو روشن می‌شود؛
+        هزاران حجره با تخفیف‌های ویژه شبانه، منتظر شما هستند.
+      </p>
+
+      <form class="search-bar sp-search" role="search">
+        <input type="search" placeholder="امشب چه می‌خواهی بخری؟ مثلاً هدفون بی‌سیم" aria-label="جستجو">
+        <button type="submit"><i class="bi bi-search"></i> جستجو</button>
+      </form>
+
+      <div class="sp-chips">
+        <a href="product.html"><img src="assets/products/a55-front.jpg" alt="گلکسی A55"> گلکسی A55 با ۱۵٪ تخفیف</a>
+        <a href="product.html"><img src="assets/products/sony.jpg" alt="هدفون سونی"> هدفون سونی</a>
+        <a href="product.html"><img src="assets/products/watch.jpg" alt="ردمی واچ ۵"> ردمی واچ ۵</a>
+        <a href="#"><img src="assets/products/coffee.jpg" alt="قهوه اسپشیالتی"> قهوه اسپشیالتی</a>
+      </div>
+
+      <div class="sp-stats">
+        <div><b data-count="12400">۰</b><span>غرفه فعال امشب</span></div>
+        <div><b data-count="860000">۰</b><span>کالای اصل</span></div>
+        <div><b data-count="98" data-suffix="٪">۰</b><span>رضایت خریداران</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="sp-marquee" aria-hidden="true">
+    <div class="sp-marquee-track">
+      <span><i class="bi bi-phone"></i> کالای دیجیتال</span><span><b>۴۰٪ تخفیف</b></span>
+      <span><i class="bi bi-bag"></i> مد و پوشاک</span><span><b>تا نیمه‌شب</b></span>
+      <span><i class="bi bi-house-heart"></i> خانه و آشپزخانه</span><span><b>ارسال رایگان</b></span>
+      <span><i class="bi bi-heart-pulse"></i> زیبایی و سلامت</span><span><b>ضمانت ۷ روزه</b></span>
+      <span><i class="bi bi-journal-bookmark"></i> کتاب و هنر</span><span><b>۴۰٪ تخفیف</b></span>
+      <span><i class="bi bi-phone"></i> کالای دیجیتال</span><span><b>تا نیمه‌شب</b></span>
+      <span><i class="bi bi-bag"></i> مد و پوشاک</span><span><b>ارسال رایگان</b></span>
+      <span><i class="bi bi-house-heart"></i> خانه و آشپزخانه</span><span><b>ضمانت ۷ روزه</b></span>
+    </div>
+  </div>
+
+  <section class="sp-sec container-xxl reveal">
+    <div class="sp-sec-head">
+      <h2>⚡ چهارسوقِ امشب</h2>
+      <div class="d-flex align-items-center gap-3">
+        <div class="sp-cd">
+          پایان تا
+          <b id="cdH">۰۰</b><span class="cd-sep">:</span>
+          <b id="cdM">۰۰</b><span class="cd-sep">:</span>
+          <b id="cdS">۰۰</b>
+        </div>
+        <div class="sp-arrows d-none d-sm-flex">
+          <button class="sp-arrow" type="button" data-rail="#spRail" data-dir="1" aria-label="قبلی"><i class="bi bi-chevron-right"></i></button>
+          <button class="sp-arrow" type="button" data-rail="#spRail" data-dir="-1" aria-label="بعدی"><i class="bi bi-chevron-left"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sp-rail" id="spRail">
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۲۵٪</span>
+        <span class="sp-ic" style="background:rgba(91,141,239,.16)"><img src="assets/products/watch.jpg" alt="ساعت هوشمند"></span>
+        <b>ساعت هوشمند شیائومی ردمی واچ ۵</b>
+        <span class="sp-price"><s>۲٬۸۰۰٬۰۰۰</s> ۲٬۱۰۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="78%"></i></span>
+        <span class="sp-sold">۷۸٪ فروخته شد</span>
+      </a>
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۱۵٪</span>
+        <span class="sp-ic" style="background:rgba(46,196,182,.16)"><img src="assets/products/a55-front.jpg" alt="گلکسی A55"></span>
+        <b>گوشی سامسونگ گلکسی A55 ظرفیت ۲۵۶</b>
+        <span class="sp-price"><s>۲۵٬۹۰۰٬۰۰۰</s> ۲۱٬۹۰۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="64%"></i></span>
+        <span class="sp-sold">۶۴٪ فروخته شد</span>
+      </a>
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۴۰٪</span>
+        <span class="sp-ic" style="background:rgba(233,161,59,.16)"><img src="assets/products/coffee.jpg" alt="قهوه اسپشیالتی"></span>
+        <b>پکیج قهوه اسپشیالتی ۱ کیلویی</b>
+        <span class="sp-price"><s>۱٬۴۵۰٬۰۰۰</s> ۸۹۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="91%"></i></span>
+        <span class="sp-sold">۹۱٪ فروخته شد</span>
+      </a>
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۳۰٪</span>
+        <span class="sp-ic" style="background:rgba(193,85,61,.16)"><img src="assets/products/sony.jpg" alt="هدفون سونی"></span>
+        <b>هدفون بی‌سیم سونی نویزکنسلینگ</b>
+        <span class="sp-price"><s>۴٬۶۰۰٬۰۰۰</s> ۳٬۴۵۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="52%"></i></span>
+        <span class="sp-sold">۵۲٪ فروخته شد</span>
+      </a>
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۱۲٪</span>
+        <span class="sp-ic" style="background:rgba(52,211,153,.16)"><img src="assets/products/saffron.jpg" alt="سوغات ایرانی"></span>
+        <b>سرویس چای‌خوری لالجین ۱۲ پارچه</b>
+        <span class="sp-price"><s>۲٬۷۰۰٬۰۰۰</s> ۲٬۳۸۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="43%"></i></span>
+        <span class="sp-sold">۴۳٪ فروخته شد</span>
+      </a>
+      <a class="sp-card" href="product.html">
+        <span class="seal-sm">۱۸٪</span>
+        <span class="sp-ic" style="background:rgba(167,139,250,.16)"><img src="assets/products/nike.jpg" alt="کفش نایک"></span>
+        <b>کفش روزمره نایک ایرمکس</b>
+        <span class="sp-price"><s>۶٬۰۰۰٬۰۰۰</s> ۴٬۸۰۰٬۰۰۰</span>
+        <span class="sp-progress"><i data-w="35%"></i></span>
+        <span class="sp-sold">۳۵٪ فروخته شد</span>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="sp-sec container-xxl reveal">
+    <div class="text-center">
+      <h2 class="sp-title" style="font-size:clamp(24px,3.4vw,36px);">مسیرِ <b>کاروان</b></h2>
+      <p class="sp-sub mx-auto" style="font-size:13.5px;">از دروازه تا سرا؛ چهار ایستگاه تا یک خرید خوب</p>
+    </div>
+    <div class="sp-journey mt-4">
+      <div class="sp-station">
+        <span class="sp-dot"><i class="bi bi-signpost-split"></i></span>
+        <a class="sp-station-card" href="#">
+          <span><h3>ایستگاه اول — دروازه دسته‌ها</h3><p>هر چه بخواهی این‌جا هست؛ از موبایل تا سوغات</p></span>
+          <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+      <div class="sp-station">
+        <span class="sp-dot"><i class="bi bi-percent"></i></span>
+        <a class="sp-station-card" href="product.html">
+          <span><h3>ایستگاه دوم — چهارسوق تخفیف</h3><p>تا ۴۰٪ پایین‌تر از هر جای دیگر</p></span>
+          <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+      <div class="sp-station">
+        <span class="sp-dot"><i class="bi bi-shop"></i></span>
+        <a class="sp-station-card" href="vendor-register.html">
+          <span><h3>ایستگاه سوم — حجره‌های معتبر</h3><p>۱۲٬۴۰۰ غرفه تأییدشده با امتیاز عملکرد</p></span>
+          <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+      <div class="sp-station">
+        <span class="sp-dot"><i class="bi bi-shield-check"></i></span>
+        <a class="sp-station-card" href="#">
+          <span><h3>ایستگاه آخر — سرای اطمینان</h3><p>ضمانت اصالت و بازگشت ۷ روزه بدون قید و شرط</p></span>
+          <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="sp-sec container-xxl reveal">
+    <div class="sp-sec-head"><h2>حجره‌های امشب</h2><a class="sp-chips-link" href="#" style="color:var(--firoozeh);font-size:13px;font-weight:700;text-decoration:none;">همه حجره‌ها <i class="bi bi-arrow-left"></i></a></div>
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <a class="sp-feature" href="#">
+          <div class="gireh"></div>
+          <img class="big" src="assets/products/saffron.jpg" alt="حجره سوغات شیراز">
+          <p class="sp-quote">«۳۰ سال است چای لاهیجان را با عشق بسته‌بندی می‌کنیم؛ حالا در بازارِ نو.»</p>
+          <small>حجره سوغات شیراز — امتیاز ۴.۹ — ۲٬۴۰۰ فروش موفق</small>
+          <span class="go">دیدن حجره <i class="bi bi-arrow-left"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-5 d-flex flex-column gap-3">
+        <a class="sp-vendor-mini" href="#">
+          <span class="av av-1"><img src="assets/products/speaker.jpg" alt="تکنولوژی برتر"></span>
+          <span><b>تکنولوژی برتر</b><small>موبایل و لپ‌تاپ اورجینال</small></span>
+          <span class="rate">★ ۴.۸</span>
+        </a>
+        <a class="sp-vendor-mini" href="#">
+          <span class="av av-2"><img src="assets/products/khatam.jpg" alt="گالری نقش جهان"></span>
+          <span><b>گالری نقش جهان</b><small>صنایع‌دستی و خاتم اصفهان</small></span>
+          <span class="rate">★ ۵.۰</span>
+        </a>
+        <a class="sp-vendor-mini" href="#">
+          <span class="av av-3"><img src="assets/products/book.jpg" alt="کتاب‌سرای یاغما"></span>
+          <span><b>کتاب‌سرای یاغما</b><small>کتاب چرمی و نسخ خطی</small></span>
+          <span class="rate">★ ۴.۷</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="sp-sec container-xxl pb-4 reveal">
+    <div class="sp-sec-head"><h2>تازه رسیده‌ها</h2><a href="#" style="color:var(--firoozeh);font-size:13px;font-weight:700;text-decoration:none;">مشاهده همه <i class="bi bi-arrow-left"></i></a></div>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4">
+      <div class="col">
+        <article class="p-card">
+          <div class="thumb t1"><img src="assets/products/a55-front.jpg" alt="گوشی گلکسی A55"><span class="seal">۱۵٪</span></div>
+          <div class="p-body">
+            <span class="cat">کالای دیجیتال</span>
+            <h3>گوشی سامسونگ گلکسی A55 ظرفیت ۲۵۶</h3>
+            <div class="price">
+              <div><small>۲۵٬۹۰۰٬۰۰۰</small><b>۲۱٬۹۰۰٬۰۰۰ تومان</b></div>
+              <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="p-card">
+          <div class="thumb t2"><img class="photo" src="assets/products/sony.jpg" alt="هدفون سونی"><span class="seal seal-new">جدید</span></div>
+          <div class="p-body">
+            <span class="cat">کالای دیجیتال</span>
+            <h3>هدفون بی‌سیم سونی WH-1000</h3>
+            <div class="price">
+              <div><b>۳٬۴۵۰٬۰۰۰ تومان</b></div>
+              <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="p-card">
+          <div class="thumb t3"><img class="photo" src="assets/products/coffee.jpg" alt="قهوه اسپشیالتی"><span class="seal">۴۰٪</span></div>
+          <div class="p-body">
+            <span class="cat">خوراکی و سوغات</span>
+            <h3>پکیج قهوه اسپشیالتی ۱ کیلویی</h3>
+            <div class="price">
+              <div><small>۱٬۴۵۰٬۰۰۰</small><b>۸۹۰٬۰۰۰ تومان</b></div>
+              <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="p-card">
+          <div class="thumb t8"><img class="photo" src="assets/products/saffron.jpg" alt="سوغات ایرانی"><span class="seal">۱۲٪</span></div>
+          <div class="p-body">
+            <span class="cat">خانه و آشپزخانه</span>
+            <h3>سرویس چای‌خوری لالجین ۱۲ پارچه</h3>
+            <div class="price">
+              <div><small>۲٬۷۰۰٬۰۰۰</small><b>۲٬۳۸۰٬۰۰۰ تومان</b></div>
+              <button class="add-btn" type="button" aria-label="افزودن به سبد"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          <a class="stretched-link" href="product.html" aria-label="مشاهده محصول"></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container-xxl py-4 reveal">
+    <div class="sp-cta">
+      <div>
+        <h2>حجره‌ات را امشب باز کن!</h2>
+        <p>ثبت‌نام غرفه‌داران جدید با پشتیبانی کامل — تا پایان ماه بدون کارمزد</p>
+      </div>
+      <a href="vendor-register.html" class="btn btn-lajvard" style="padding:13px 34px;">ساخت غرفه <i class="bi bi-arrow-left"></i></a>
+    </div>
+  </section>
+</main>
+<footer class="bazar-footer" style="margin-top:26px;">
+  <div class="arch-strip" aria-hidden="true"></div>
+  <div class="container-xxl">
+    <div class="row g-4 py-4 py-lg-5">
+      <div class="col-lg-3 col-md-12">
+        <a class="logo logo-light" href="home-special.html">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+            <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+          </svg>
+          <span>شب‌بازارِ<b>نو</b></span>
+        </a>
+        <p class="f-about">شب‌بازارِ نو؛ چهره شبانه کاروانسرای دیجیتال ایران. امشب صدها حجره با تخفیف‌های ویژه تا نیمه‌شب باز هستند.</p>
+        <a href="index.html" class="btn nn-ghost mt-2" style="display:inline-flex;align-items:center;gap:8px;"><i class="bi bi-sun"></i> نسخه روزِ بازار</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>راسته‌های پرمخاطب</h4>
+        <ul class="f-links">
+          <li><a href="product.html">موبایل و کالای دیجیتال</a></li>
+          <li><a href="#">مد و پوشاک</a></li>
+          <li><a href="#">سوغات و صنایع‌دستی</a></li>
+          <li><a href="#">کتاب و هنر</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>خدمات مشتریان</h4>
+        <ul class="f-links">
+          <li><a href="#">پرسش‌های متداول</a></li>
+          <li><a href="#">رویه بازگشت کالا</a></li>
+          <li><a href="profile-orders.html">پیگیری سفارش</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>صفحات قالب</h4>
+        <ul class="f-links">
+          <li><a href="index.html">بازار (صفحه اصلی)</a></li>
+          <li><a href="home-luxury.html">سرایِ نقره — صفحه اصلی لاکچری</a></li>
+          <li><a href="vendor-register.html">ساخت غرفه</a></li>
+          <li><a href="profile-orders.html">لیست سفارش‌ها</a></li>
+          <li><a href="auth-login.html">ورود و ثبت‌نام</a></li>
+          <li><a href="admin.html">پنل مدیریت</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h4>با ما در ارتباط باشید</h4>
+        <p class="f-contact-line"><i class="bi bi-geo-alt"></i> تهران، بازار بزرگ، سرای بازارِ نو</p>
+        <p class="f-contact-line"><i class="bi bi-telephone"></i> ۰۲۱-۹۱۰۰۲۰۳۰</p>
+        <p class="f-contact-line"><i class="bi bi-envelope"></i> salam@bazarnow.ir</p>
+        <div class="d-flex gap-2 mt-3">
+          <a class="social-btn" href="#" aria-label="اینستاگرام"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="تلگرام"><i class="bi bi-send"></i></a>
+          <a class="social-btn" href="#" aria-label="لینکدین"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="#" aria-label="یوتیوب"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© ۱۴۰۴ بازارِ نو — تمام حقوق برای کاروانسرای دیجیتال بازارِ نو محفوظ است</div>
+</footer>
+
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+  <div id="cartToast" class="toast bazar-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex align-items-center">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill icon-zafran"></i> محصول به سبد خرید اضافه شد
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="بستن"></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

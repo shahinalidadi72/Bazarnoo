@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="سفارش‌های من — بازارِ نو">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>سفارش‌های من | بازارِ نو</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ═══ منوی موبایل ═══ -->
+<div class="night-nav" id="nightNav" role="dialog" aria-modal="true" aria-label="منوی بازارِ نو" aria-hidden="true">
+  <div class="nn-inner">
+    <div class="nn-top">
+      <button class="nn-close" id="navClose" type="button" aria-label="closemenu"><span></span><span></span></button>
+      <a class="nn-brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/><circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/></svg>
+        بازارِ<b>نو</b>
+      </a>
+    </div>
+    <nav aria-label="منوی اصلی موبایل">
+      <ul class="nn-list list-unstyled">
+        <li style="--m:#FF6B5E; --ms:rgba(255,107,94,.16)"><a href="index.html"><i class="bi bi-house"></i><b>صفحه اصلی</b><span class="nn-num">۰۱</span></a></li>
+        <li style="--m:#5B8DEF; --ms:rgba(91,141,239,.16)"><a href="product.html"><i class="bi bi-phone"></i><b>کالای دیجیتال</b><span class="nn-num">۰۲</span></a></li>
+        <li style="--m:#34D399; --ms:rgba(52,211,153,.16)"><a href="home-special.html"><i class="bi bi-moon-stars"></i><b>شب‌بازار</b><span class="nn-num">۰۳</span></a></li>
+        <li style="--m:#E9A13B; --ms:rgba(233,161,59,.16)"><a href="auth-login.html"><i class="bi bi-box-arrow-left"></i><b>خروج از حساب</b><span class="nn-num">۰۴</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<header class="sticky-top glass-header" id="bazarHeader">
+  <div class="container-xxl">
+    <div class="d-flex align-items-center gap-2 gap-lg-3 py-2">
+      <button class="burger-fancy d-lg-none" type="button" id="navToggle"
+              aria-controls="nightNav" aria-expanded="false" aria-label="openmenu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="logo" href="index.html">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#1B2A6B"/>
+          <circle cx="16" cy="8.5" r="3" fill="#E9A13B"/>
+        </svg>
+        <span>بازارِ<b>نو</b></span>
+      </a>
+      <form class="search-bar d-none d-lg-flex flex-grow-1" role="search">
+        <input type="search" placeholder="جستجو در بازارِ نو..." aria-label="search">
+        <button type="submit"><i class="bi bi-search"></i> جستجو</button>
+      </form>
+      <div class="d-flex gap-2 ms-auto ms-lg-0">
+        <a class="icon-btn d-none d-sm-grid" href="auth-login.html" aria-label="account"><i class="bi bi-person"></i></a>
+        <button class="icon-btn" type="button" id="cartBtn" aria-label="سبد خرید">
+          <i class="bi bi-basket2"></i>
+          <span class="cart-badge" id="cartBadge">۰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container-xxl py-4">
+  <nav class="crumbs" aria-label="مسیر صفحه">
+    <a href="index.html">بازارِ نو</a><i class="bi bi-chevron-left"></i>
+    <a href="#">حساب کاربری</a><i class="bi bi-chevron-left"></i>
+    <span>سفارش‌های من</span>
+  </nav>
+
+  <div class="row g-4">
+    <aside class="col-lg-3">
+      <div class="pf-side">
+        <div class="pf-user">
+          <span class="av">ن</span>
+          <span><b>نیلوفر رحیمی</b><small>۰۹۱۲ *** ۴۵۶۷</small></span>
+        </div>
+        <ul class="pf-menu">
+          <li><a href="#"><i class="bi bi-speedometer2"></i> داشبورد</a></li>
+          <li class="active"><a href="profile-orders.html"><i class="bi bi-bag-check"></i> سفارش‌های من</a></li>
+          <li><a href="#"><i class="bi bi-geo-alt"></i> آدرس‌ها</a></li>
+          <li><a href="#"><i class="bi bi-wallet2"></i> کیف پول</a></li>
+          <li><a href="#"><i class="bi bi-heart"></i> علاقه‌مندی‌ها</a></li>
+          <li><a href="#"><i class="bi bi-gear"></i> تنظیمات</a></li>
+          <li class="quit"><a href="auth-login.html"><i class="bi bi-box-arrow-left"></i> خروج از حساب</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="col-lg-9">
+      <h1 class="pf-title">سفارش‌های من</h1>
+
+      <ul class="nav pf-tabs" role="tablist">
+        <li role="presentation"><button class="active" type="button" data-bs-toggle="tab" data-bs-target="#ordNow">جاری (۲)</button></li>
+        <li role="presentation"><button type="button" data-bs-toggle="tab" data-bs-target="#ordDone">تحویل‌شده (۵)</button></li>
+        <li role="presentation"><button type="button" data-bs-toggle="tab" data-bs-target="#ordBack">مرجوعی (۱)</button></li>
+      </ul>
+
+      <div class="tab-content">
+
+
+        <div class="tab-pane fade show active" id="ordNow" role="tabpanel">
+          <div class="ord-card">
+            <header>
+              <div><span class="ord-code">سفارش #۱۴۰۴-۰۹۲۸۸۵</span><span class="ord-date">امروز، ۱۴:۳۲</span></div>
+              <span class="ord-st s-process"><i class="bi bi-hourglass-split"></i> در حال پردازش</span>
+            </header>
+            <div class="ord-items">
+              <span class="mini t1"><img src="assets/products/a55-front.jpg" alt="گوشی گلکسی A55"></span>
+              <span class="more">و ۱ کالای دیگر</span>
+            </div>
+            <div class="ord-foot">
+              <span class="sum">مبلغ: <b>۲۱٬۹۰۰٬۰۰۰ تومان</b></span>
+              <div class="ord-actions">
+                <a href="#" class="prim"><i class="bi bi-geo"></i> پیگیری سفارش</a>
+                <a href="#">مشاهده فاکتور</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ord-card">
+            <header>
+              <div><span class="ord-code">سفارش #۱۴۰۴-۰۹۲۷۷۲</span><span class="ord-date">دیروز، ۲۱:۰۵</span></div>
+              <span class="ord-st s-send"><i class="bi bi-truck"></i> تحویل به پیک شد</span>
+            </header>
+            <div class="ord-items">
+              <span class="mini t3"><img class="photo" src="assets/products/coffee.jpg" alt="قهوه"></span>
+              <span class="mini t8"><img class="photo" src="assets/products/saffron.jpg" alt="سوغات"></span>
+              <span class="more">و ۲ کالای دیگر</span>
+            </div>
+            <div class="ord-foot">
+              <span class="sum">مبلغ: <b>۳٬۲۷۰٬۰۰۰ تومان</b></span>
+              <div class="ord-actions">
+                <a href="#" class="prim"><i class="bi bi-geo"></i> پیگیری سفارش</a>
+                <a href="#">مشاهده فاکتور</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="tab-pane fade" id="ordDone" role="tabpanel">
+          <div class="ord-card">
+            <header>
+              <div><span class="ord-code">سفارش #۱۴۰۴-۰۹۱۱۴۳</span><span class="ord-date">۵ مهر ۱۴۰۴</span></div>
+              <span class="ord-st s-done"><i class="bi bi-check-circle"></i> تحویل شد</span>
+            </header>
+            <div class="ord-items">
+              <span class="mini t2"><img class="photo" src="assets/products/sony.jpg" alt="هدفون سونی"></span>
+              <span class="more">هدفون بی‌سیم سونی</span>
+            </div>
+            <div class="ord-foot">
+              <span class="sum">مبلغ: <b>۳٬۴۵۰٬۰۰۰ تومان</b></span>
+              <div class="ord-actions">
+                <a href="product.html">خرید مجدد</a>
+                <a href="#">ثبت دیدگاه</a>
+                <a href="#">فاکتور</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ord-card">
+            <header>
+              <div><span class="ord-code">سفارش #۱۴۰۴-۰۸۸۹۹۰</span><span class="ord-date">۲۸ شهریور ۱۴۰۴</span></div>
+              <span class="ord-st s-done"><i class="bi bi-check-circle"></i> تحویل شد</span>
+            </header>
+            <div class="ord-items">
+              <span class="mini t7"><img src="assets/products/book.jpg" alt="رباعی‌های حافظ"></span>
+              <span class="more">رباعی‌های حافظ — جلد چرمی</span>
+            </div>
+            <div class="ord-foot">
+              <span class="sum">مبلغ: <b>۴۵۰٬۰۰۰ تومان</b></span>
+              <div class="ord-actions">
+                <a href="product.html">خرید مجدد</a>
+                <a href="#">ثبت دیدگاه</a>
+                <a href="#">فاکتور</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="tab-pane fade" id="ordBack" role="tabpanel">
+          <div class="ord-card">
+            <header>
+              <div><span class="ord-code">سفارش #۱۴۰۴-۰۷۶۵۵۱</span><span class="ord-date">۲ مرداد ۱۴۰۴</span></div>
+              <span class="ord-st s-back"><i class="bi bi-arrow-return-left"></i> مرجوع شد</span>
+            </header>
+            <div class="ord-items">
+              <span class="mini t4"><img src="assets/products/perfume.jpg" alt="عطر لالیک"></span>
+              <span class="more">عطر لالیک انکر نویر — مبلغ به کیف پول بازگشت</span>
+            </div>
+            <div class="ord-foot">
+              <span class="sum">مبلغ: <b>۲٬۹۵۰٬۰۰۰ تومان</b></span>
+              <div class="ord-actions">
+                <a href="#">جزئیات مرجوعی</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bazar-footer">
+  <div class="arch-strip" aria-hidden="true"></div>
+  <div class="container-xxl">
+    <div class="row g-4 py-4 py-lg-5">
+      <div class="col-lg-3 col-md-12">
+        <a class="logo logo-light" href="index.html">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+            <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+          </svg>
+          <span>بازارِ<b>نو</b></span>
+        </a>
+        <p class="f-about">بازارِ نو یک کاروانسرای دیجیتال است؛ جایی که هزاران غرفه‌دار معتبر از سراسر ایران، کالای اصل را با ضمانت اصالت به دست شما می‌رسانند.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>پیوندهای سریع</h4>
+        <ul class="f-links">
+          <li><a href="product.html">محصولات</a></li>
+          <li><a href="home-special.html">شب‌بازار</a></li>
+          <li><a href="vendor-register.html">ساخت غرفه</a></li>
+          <li><a href="auth-login.html">ورود</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>خدمات مشتریان</h4>
+        <ul class="f-links">
+          <li><a href="#">پرسش‌های متداول</a></li>
+          <li><a href="#">رویه بازگشت کالا</a></li>
+          <li><a href="#">شرایط استفاده</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>صفحات قالب</h4>
+        <ul class="f-links">
+          <li><a href="home-special.html">شب‌بازار — صفحه اصلی ویژه</a></li>
+          <li><a href="home-luxury.html">سرایِ نقره — صفحه اصلی لاکچری</a></li>
+          <li><a href="vendor-register.html">ساخت غرفه</a></li>
+          <li><a href="index.html">بازار (صفحه اصلی)</a></li>
+          <li><a href="auth-login.html">ورود و ثبت‌نام</a></li>
+          <li><a href="admin.html">پنل مدیریت</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h4>با ما در ارتباط باشید</h4>
+        <p class="f-contact-line"><i class="bi bi-geo-alt"></i> تهران، بازار بزرگ، سرای بازارِ نو</p>
+        <p class="f-contact-line"><i class="bi bi-telephone"></i> ۰۲۱-۹۱۰۰۲۰۳۰</p>
+        <p class="f-contact-line"><i class="bi bi-envelope"></i> salam@bazarnow.ir</p>
+        <div class="d-flex gap-2 mt-3">
+          <a class="social-btn" href="#" aria-label="insta"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="tel"><i class="bi bi-send"></i></a>
+          <a class="social-btn" href="#" aria-label="linkdin"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="#" aria-label="yout"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© ۱۴۰۴ بازارِ نو — تمام حقوق برای کاروانسرای دیجیتال بازارِ نو محفوظ است</div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+  <div id="cartToast" class="toast bazar-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex align-items-center">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill icon-zafran"></i> محصول به سبد خرید اضافه شد
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="close"></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

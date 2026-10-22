@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="پنل مدیریت بازارِ نو">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>پنل مدیریت | بازارِ نو</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="ad-page">
+
+
+<aside class="ad-side" id="adSide">
+  <a class="ad-brand" href="index.html">
+    <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+      <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+    </svg>
+    پنل <b>بازارِ نو</b>
+  </a>
+  <ul>
+    <li class="active"><a href="admin.html"><i class="bi bi-speedometer2"></i> داشبورد</a></li>
+    <li><a href="#"><i class="bi bi-box-seam"></i> محصولات</a></li>
+    <li><a href="#"><i class="bi bi-bag-check"></i> سفارش‌ها</a></li>
+    <li><a href="#"><i class="bi bi-shop"></i> غرفه‌داران</a></li>
+    <li><a href="#"><i class="bi bi-chat-square-text"></i> دیدگاه‌ها</a></li>
+    <li><a href="#"><i class="bi bi-bar-chart"></i> گزارش‌ها</a></li>
+    <li><a href="#"><i class="bi bi-gear"></i> تنظیمات</a></li>
+  </ul>
+  <div class="ad-logout"><a class="ad-back" href="index.html"><i class="bi bi-shop"></i> مشاهده فروشگاه</a><a href="auth-login.html"><i class="bi bi-box-arrow-left"></i> خروج از پنل</a></div>
+</aside>
+<div class="ad-backdrop" id="adBackdrop"></div>
+
+
+<div class="ad-main">
+  <header class="ad-top">
+    <button class="ad-burger" type="button" id="adBurger" aria-label="باز کردن منو"><i class="bi bi-list"></i></button>
+    <div class="ad-search">
+      <i class="bi bi-search"></i>
+      <input type="search" placeholder="جستجوی سفارش، محصول، غرفه‌دار...">
+    </div>
+    <button class="ad-bell" type="button" aria-label="اعلان‌ها"><i class="bi bi-bell"></i></button>
+    <div class="ad-admin">
+      <span class="av">م</span>
+      <span>مدیر بازار</span>
+    </div>
+  </header>
+
+  <div class="ad-content">
+
+    
+    <div class="ad-stats">
+      <div class="ad-stat">
+        <span class="ic i1"><i class="bi bi-cash-stack"></i></span>
+        <div><b>۱۲۴٬۸۰۰٬۰۰۰</b><span>فروش امروز (تومان)</span><span class="trend up">↑ ۱۲٪ از دیروز</span></div>
+      </div>
+      <div class="ad-stat">
+        <span class="ic i2"><i class="bi bi-bag-check"></i></span>
+        <div><b>۸۶</b><span>سفارش جدید</span><span class="trend up">↑ ۸٪ از دیروز</span></div>
+      </div>
+      <div class="ad-stat">
+        <span class="ic i3"><i class="bi bi-shop"></i></span>
+        <div><b>۱٬۲۴۰</b><span>غرفه فعال</span><span class="trend up">↑ ۱۴ غرفه جدید</span></div>
+      </div>
+      <div class="ad-stat">
+        <span class="ic i4"><i class="bi bi-arrow-return-left"></i></span>
+        <div><b>۹</b><span>درخواست مرجوعی</span><span class="trend down">↓ ۳٪ از دیروز</span></div>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-3">
+      
+      <div class="col-lg-8">
+        <div class="ad-card">
+          <h3><i class="bi bi-bar-chart" style="color:var(--zafran);"></i> فروش هفت روز گذشته</h3>
+          <div class="ad-chart">
+            <div class="ad-col"><span class="val">۸۴م</span><b data-h="52%"></b><small>شنبه</small></div>
+            <div class="ad-col"><span class="val">۹۶م</span><b data-h="60%"></b><small>یکشنبه</small></div>
+            <div class="ad-col"><span class="val">۷۲م</span><b data-h="45%"></b><small>دوشنبه</small></div>
+            <div class="ad-col"><span class="val">۱۱۰م</span><b data-h="68%"></b><small>سه‌شنبه</small></div>
+            <div class="ad-col"><span class="val">۱۰۲م</span><b data-h="63%"></b><small>چهارشنبه</small></div>
+            <div class="ad-col hi"><span class="val" style="color:#B8791F;">۱۴۸م</span><b data-h="92%"></b><small>پنجشنبه</small></div>
+            <div class="ad-col"><span class="val">۱۲۴م</span><b data-h="78%"></b><small>جمعه</small></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="ad-card">
+          <h3><i class="bi bi-pie-chart" style="color:var(--firoozeh-d);"></i> فروش بر اساس راسته</h3>
+          <div class="ad-donut-wrap">
+            <div class="ad-donut" role="img" aria-label="نمودار فروش بر اساس دسته‌بندی"></div>
+            <div class="ad-legend">
+              <span><i style="background:var(--zafran);"></i> کالای دیجیتال <b>۳۸٪</b></span>
+              <span><i style="background:var(--firoozeh);"></i> مد و پوشاک <b>۲۸٪</b></span>
+              <span><i style="background:var(--shamghe);"></i> سوغات <b>۱۸٪</b></span>
+              <span><i style="background:#5B8DEF;"></i> سایر <b>۱۶٪</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-3">
+      
+      <div class="col-lg-8">
+        <div class="ad-card">
+          <h3><i class="bi bi-bag-check" style="color:var(--zafran);"></i> آخرین سفارش‌ها</h3>
+          <div class="table-responsive">
+            <table class="ad-table">
+              <thead>
+                <tr><th>کد سفارش</th><th>مشتری</th><th>محصول</th><th>مبلغ</th><th>وضعیت</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#۱۴۰۴-۰۹۲۸۸۵</td>
+                  <td>نیلوفر رحیمی</td>
+                  <td><span class="p-name"><span class="ic t1"><img src="assets/products/a55-front.jpg" alt="گلکسی A55"></span>گلکسی A55</span></td>
+                  <td>۲۱٬۹۰۰٬۰۰۰</td>
+                  <td><span class="ad-badge s-process">در حال پردازش</span></td>
+                </tr>
+                <tr>
+                  <td>#۱۴۰۴-۰۹۲۷۷۲</td>
+                  <td>امیر کاظمی</td>
+                  <td><span class="p-name"><span class="ic t3"><img class="photo" src="assets/products/coffee.jpg" alt="قهوه"></span>قهوه اسپشیالتی</span></td>
+                  <td>۸۹۰٬۰۰۰</td>
+                  <td><span class="ad-badge s-send">ارسال شد</span></td>
+                </tr>
+                <tr>
+                  <td>#۱۴۰۴-۰۹۲۶۴۱</td>
+                  <td>سارا محمدی</td>
+                  <td><span class="p-name"><span class="ic t2"><img class="photo" src="assets/products/sony.jpg" alt="هدفون سونی"></span>هدفون سونی</span></td>
+                  <td>۳٬۴۵۰٬۰۰۰</td>
+                  <td><span class="ad-badge s-done">تحویل شد</span></td>
+                </tr>
+                <tr>
+                  <td>#۱۴۰۴-۰۹۲۵۸۸</td>
+                  <td>رضا قلی‌زاده</td>
+                  <td><span class="p-name"><span class="ic t6"><img src="assets/products/watch.jpg" alt="ردمی واچ"></span>ردمی واچ ۵</span></td>
+                  <td>۲٬۱۰۰٬۰۰۰</td>
+                  <td><span class="ad-badge s-back">مرجوعی</span></td>
+                </tr>
+                <tr>
+                  <td>#۱۴۰۴-۰۹۲۴۷۰</td>
+                  <td>مینا صادقی</td>
+                  <td><span class="p-name"><span class="ic t8"><img class="photo" src="assets/products/saffron.jpg" alt="سرویس لالجین"></span>سرویس لالجین</span></td>
+                  <td>۲٬۳۸۰٬۰۰۰</td>
+                  <td><span class="ad-badge s-send">ارسال شد</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="ad-card">
+          <h3><i class="bi bi-fire" style="color:var(--shamghe);"></i> پرفروش‌ترین‌های هفته</h3>
+          <div class="ad-top-product">
+            <span class="ic t1"><img src="assets/products/a55-front.jpg" alt="گلکسی A55"></span>
+            <div style="flex:1;"><b>گوشی گلکسی A55</b><div class="bar"><i data-w="88%"></i></div></div>
+            <span class="pc">۳۱۲ فروش</span>
+          </div>
+          <div class="ad-top-product">
+            <span class="ic t3"><img class="photo" src="assets/products/coffee.jpg" alt="قهوه"></span>
+            <div style="flex:1;"><b>قهوه اسپشیالتی</b><div class="bar"><i data-w="74%"></i></div></div>
+            <span class="pc">۲۵۸ فروش</span>
+          </div>
+          <div class="ad-top-product">
+            <span class="ic t2"><img class="photo" src="assets/products/sony.jpg" alt="هدفون سونی"></span>
+            <div style="flex:1;"><b>هدفون سونی</b><div class="bar"><i data-w="61%"></i></div></div>
+            <span class="pc">۱۹۴ فروش</span>
+          </div>
+          <div class="ad-top-product" style="margin-bottom:0;">
+            <span class="ic t6"><img src="assets/products/watch.jpg" alt="ردمی واچ"></span>
+            <div style="flex:1;"><b>ردمی واچ ۵</b><div class="bar"><i data-w="45%"></i></div></div>
+            <span class="pc">۱۳۲ فروش</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

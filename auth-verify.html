@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="تایید شماره تلفن — بازارِ نو">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<title>تایید شماره تلفن | بازارِ نو</title>
+
+<link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages.css" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="au-page">
+
+<div class="sp-stars" aria-hidden="true"></div>
+<div class="au-lantern" aria-hidden="true">
+  <svg viewBox="0 0 64 122" width="38">
+    <line x1="32" y1="0" x2="32" y2="20" stroke="#B99A55" stroke-width="2"/>
+    <path d="M23 20h18l-2.5 8h-13z" fill="#E9A13B"/>
+    <path d="M20 28h24c6 9 9 20 9 29 0 17-9.5 30-21 30S11 74 11 57c0-9 3-20 9-29z" fill="#FFDF9E" stroke="#C1553D" stroke-width="3"/>
+    <g class="flame"><path d="M32 45c4.5 5.5 7 10 7 13.5a7 7 0 0 1-14 0C25 55 27.5 50.5 32 45z" fill="#FFF6DF"/><circle cx="32" cy="58" r="3.6" fill="#F6A21B"/></g>
+    <rect x="25" y="87" width="14" height="7" rx="3" fill="#C1553D"/>
+    <line x1="32" y1="94" x2="32" y2="103" stroke="#E9A13B" stroke-width="2"/>
+    <circle cx="32" cy="108" r="4.5" fill="#E9A13B"/>
+  </svg>
+</div>
+
+<div class="au-wrap">
+  <a class="au-logo" href="index.html">
+    <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M4 28V14a12 12 0 0 1 24 0v14h-7V15a5 5 0 0 0-10 0v13z" fill="#E9A13B"/>
+      <circle cx="16" cy="8.5" r="3" fill="#2EC4B6"/>
+    </svg>
+    بازارِ<b>نو</b>
+  </a>
+
+  <div class="au-card" style="text-align:center;">
+    <div class="au-icon-top"><i class="bi bi-phone-vibrate"></i></div>
+    <h1>تایید شماره تلفن</h1>
+    <p class="au-sub">کد <b>۵ رقمی</b> به شماره <b id="otpPhone">۰۹۱۲ ··· ۴۵۶۷</b> ارسال شد.<br>لطفاً آن را در کادرهای زیر وارد کنید.</p>
+
+    <form action="index.html">
+      <div class="otp-boxes">
+        <input class="otp-in" type="tel" maxlength="1" inputmode="numeric" aria-label="digit 1">
+        <input class="otp-in" type="tel" maxlength="1" inputmode="numeric" aria-label="digit 2">
+        <input class="otp-in" type="tel" maxlength="1" inputmode="numeric" aria-label="digit 3">
+        <input class="otp-in" type="tel" maxlength="1" inputmode="numeric" aria-label="digit 4">
+        <input class="otp-in" type="tel" maxlength="1" inputmode="numeric" aria-label="digit 5s">
+      </div>
+
+      <div class="otp-timer">
+        ارسال مجدد کد تا <b id="otpTimer">۱:۵۰</b>
+        <span class="d-block mt-1"><button type="button" class="otp-resend" id="otpResend">ارسال مجدد کد</button></span>
+      </div>
+
+      <button type="submit" class="au-btn">
+        <i class="bi bi-check2-circle"></i> تایید و ورود به بازار
+      </button>
+    </form>
+
+    <p class="au-alt">شماره اشتباه است؟ <a href="auth-login.html">ویرایش شماره</a></p>
+  </div>
+
+  <p class="au-foot">کد تایید معمولاً در کمتر از یک دقیقه می‌رسد — پوشه پیامک‌های تبلیغاتی را هم چک کنید</p>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
